@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ORIGIN 
+
+
+
+
+*/
+
+/* TOOLS
+
+Tint and Shades Generator - maketintshades.com
+
+
+
+*/
+
+body {
+  font-family: "Rubik", sans-serif;
+
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+/* html {
+  font-size: 62.5%;
+} */
+
+.section-hero {
+  background-color: #fae5d3;
+  padding: 4.6rem 2rem;
+}
+.hero {
+  max-width: 100rem;
+  /* margin: 0 auto; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.5rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 2.8rem;
+}
+
+.hero-desc {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* btn */
+
+/* to design button for the link use btn with pseudo element because
+this is not just a normal button */
+
+/* the original state before any hover */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 9px;
+  /* add the transition property to animate the button effect */
+  transition: background-color 0.3s;
+}
+
+/* btn specificity and hover */
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #b8651b;
+}
+
+/* use a helper class to set the margin to right */
+.margin-right {
+  margin-right: 1.5rem;
+}
+
+/* btn--outline */
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fdf2e9;
+  border: 2px solid #fff;
+  color: #555;
+}
+
+/* added box shadow on the button to give it an effect */
+/* add the transition property to the original button state */
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #ffffff;
+  box-shadow: insert 0 0 0 3px;
+}
+
+/* img */
+.hero-img {
+  width: 100%;
+}
+
+/* Customer delivery images */
+.img-size {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.delivered-meals {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.delivered-imgs {
+  display: flex;
+  gap: 0.1rem;
+  margin-right: 0.8rem;
+}
+
+/* .delivered-imgs img {
+  height: 4.4rem;
+  border-radius: 50%;
+} */
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
