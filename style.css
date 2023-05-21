@@ -21,10 +21,23 @@ Greys
 Default: 400
 Medium: 500
 Semi-bold: 600
+Bold: 700
 
 
 -Border-radius
 Default:  9px
+
+-Line Heights
+Default: 1
+Small: 1.05
+Paragraph default: 1.6
+
+-Letter spacing
+-0.5px
+0.75px
+
+
+
 
 
 
@@ -36,14 +49,18 @@ Default:  9px
 /* TOOLS
 
 Tint and Shades Generator - maketintshades.com
+yeun.github.io/open-color
+coolors.io
+freelogo design.org
 
+Favicon.io
+Generate Text from favicon.io
 
 
 */
 
 body {
   font-family: "Rubik", sans-serif;
-
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -107,7 +124,8 @@ body {
 /* Hero section */
 
 .section-hero {
-  background-color: #fae5d3;
+  /* background-color: #fae5d3; */
+  background-color: #f5cba7;
   padding: 4.6rem 2rem;
 }
 
@@ -117,18 +135,57 @@ body {
   padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  /* display: flex;
+  flex-direction: row; */
   gap: 5.5rem;
   align-items: center;
 }
 
+/* Test styling heading-primary/ heading-secondary
+subheading */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #45260a;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
 .heading-primary {
   font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.02;
-  color: #333;
-  letter-spacing: -0.5px;
+  line-height: 1;
   margin-bottom: 2.8rem;
 }
+
+.heading-secondary {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 3.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 2.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+/* Hero description */
 
 .hero-desc {
   font-size: 1.2rem;
@@ -212,7 +269,7 @@ this is not just a normal button */
   align-items: center;
 }
 
-.delivered-imgs {
+.delivered-img {
   display: flex;
   margin-right: 2rem;
   /* gap: 2rem; */
@@ -234,4 +291,53 @@ this is not just a normal button */
 
 .delivered-text span {
   color: #e67e22;
+}
+
+/* Reusable Components section*/
+.section-how {
+  padding: 9.6rem 2rem;
+  background-color: #fdf2e9;
+}
+
+.container {
+  /*1140px*/
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 5.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+/* How it works */
+
+.step-img {
+  width: 50%;
+}
+
+.step-number {
+  font-size: 5.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
