@@ -320,10 +320,6 @@ this is not just a normal button */
 }
 /* How it works */
 
-.step-img {
-  width: 50%;
-}
-
 .step-number {
   font-size: 5.8rem;
   font-weight: 600;
@@ -337,7 +333,69 @@ this is not just a normal button */
 }
 
 .step-img-box {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* .step-img-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  
+  width: 60%;
+  background-color: #f0b27a;
+  border-radius: 50%;
+  
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  padding-bottom: 60%;
+} 
+*/
+
+.step-img {
+  width: 45%;
+  /* height: 80%; */
+}
+
+/* Z-INDEX */
+
+.container-index {
+  /* background-position: top center; */
+  position: relative;
+  z-index: 1;
+}
+
+.container-index::before,
+.container-index::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 60%;
+  background-color: #f8d8bd; */
+  /* opacity: 0.3; */
+  /* z-index: -2; */
+  /* padding-bottom: 20%; */
+}
+
+.container-index::before {
+  width: 70%;
+  background-color: #f0b27a;
+  padding-bottom: 20%;
+  z-index: -2;
+}
+
+.container-index::after {
+  width: 60%;
+  padding-bottom: 15%;
+  background-color: #f8d8bd;
+  z-index: -2;
 }
