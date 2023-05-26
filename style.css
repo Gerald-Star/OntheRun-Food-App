@@ -16,7 +16,7 @@ Tints #fdf2e9
 shades #cf711f
 Accents #
 Greys
-
+z-index #f8d8bd  #f0b27a
 -Font Weights
 Default: 400
 Medium: 500
@@ -142,8 +142,11 @@ body {
   align-items: center;
 }
 
-/* Test styling heading-primary/ heading-secondary
-subheading */
+/******* Test styling - Reusable
+heading-primary/ 
+heading-secondary
+subheading 
+************************/
 
 .heading-primary,
 .heading-secondary,
@@ -164,20 +167,20 @@ subheading */
 }
 
 .heading-secondary {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   line-height: 1.2;
   margin-bottom: 3.6rem;
 }
 
 .heading-tertiary {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   margin-bottom: 2.2rem;
 }
 
 .subheading {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #cf711f;
   text-transform: uppercase;
@@ -293,9 +296,12 @@ this is not just a normal button */
   color: #e67e22;
 }
 
-/* Reusable Components section*/
+/***************************** 
+Reusable Components section
+FOOD IMAGE SECTION with Z-INDEX OVERLAY
++****************************/
 .section-how {
-  padding: 9.6rem 2rem;
+  padding: 4.6rem 2rem;
   background-color: #fdf2e9;
 }
 
@@ -339,23 +345,42 @@ this is not just a normal button */
   justify-content: center;
 }
 
-/* .step-img-box::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  
-  width: 60%;
-  background-color: #f0b27a;
-  border-radius: 50%;
-  
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  padding-bottom: 60%;
-} 
-*/
+/****************************/
+/* LOG FEATURE SECTIONS */
+/*****************************/
 
+.section-featured {
+  padding: 4rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+}
+
+/****selecting the logos using the descendant selector*/
+/**using filter property to make images grey */
+
+.logos img {
+  height: 2.5rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/********************
+IMAGE SECTIONS
+*********************/
 .step-img {
   width: 45%;
   /* height: 80%; */
@@ -385,17 +410,107 @@ this is not just a normal button */
   /* z-index: -2; */
   /* padding-bottom: 20%; */
 }
-
+/* The top z-index using before pseudo element */
 .container-index::before {
   width: 70%;
-  background-color: #f0b27a;
+  background-color: #f8d8bd;
   padding-bottom: 20%;
   z-index: -2;
 }
 
+/* the under z- index using after pseudo element*/
 .container-index::after {
   width: 60%;
   padding-bottom: 15%;
-  background-color: #f8d8bd;
+  /* background-color: #38657c; */
+  /* opacity: 5; */
+  background-color: #9cb2be;
   z-index: -2;
+}
+
+/*****************
+SECTION MEAL
+******************/
+
+.section-meal {
+  padding: 4.6rem 2rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/********************* 
+put the meal section on box shadow
+************************/
+
+.meal {
+  box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-content {
+  padding: 1.2rem 2rem 2rem 2rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  background-color: #51cf66;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.meal-title {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.meal-attribute {
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.meal-icon {
+  height: 1rem;
+  width: 1rem;
+  color: #e67e22;
+}
+
+/**********
+Style Strong
+
+***********/
+strong {
+  font-weight: 500;
+}
+
+/* SECOND MEAL CARD  */
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #ffd43b;
 }
