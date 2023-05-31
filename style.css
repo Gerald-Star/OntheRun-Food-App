@@ -125,7 +125,8 @@ body {
 
 .section-hero {
   /* background-color: #fae5d3; */
-  background-color: #f5cba7;
+  /* background-color: #f5cba7; */
+  background-image: linear-gradient(to right bottom, #f7c395, #f58d32);
   padding: 4.6rem 2rem;
 }
 
@@ -196,23 +197,29 @@ subheading
   margin-bottom: 1.5rem;
 }
 
-/* btn */
+/* ALL BUTTONS */
 
 /* to design button for the link use btn with pseudo element because
 this is not just a normal button */
 
 /* the original state before any hover */
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
   text-decoration: none;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1rem;
   padding: 1.1rem 1.2rem;
   border-radius: 9px;
-  /* add the transition property to animate the button effect */
+
+  /*only for btn*/
+  border: none;
+  cursor: pointer;
+
+  /* add the transition property to animate 
+  the button effect */
   transition: all 0.3s;
 }
 
@@ -251,6 +258,18 @@ this is not just a normal button */
   box-shadow: insert 0 0 0 3px;
 }
 
+/* button cta*/
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
 /* img */
 .hero-img {
   width: 100%;
@@ -315,6 +334,8 @@ Reusable Components section
 .grid {
   display: grid;
   gap: 0.4rem;
+  column-gap: 1rem;
+  row-gap: 2rem;
 }
 
 .grid--2-cols {
@@ -373,7 +394,7 @@ Reusable Components section
 /**using filter property to make images grey */
 
 .logos img {
-  height: 2.5rem;
+  height: 1.5rem;
   filter: brightness(0);
   opacity: 50%;
 }
@@ -532,7 +553,7 @@ Style ALL RECIPES
 to make a space */
 
 .margin-bottom-md {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .all-recipes {
@@ -673,7 +694,7 @@ SECTION PRICING
 }
 
 .pricing-plan-complete {
-  background-color: #fdf2e9;
+  background-color: #f7d6b9;
   position: relative;
   overflow: hidden;
 }
@@ -692,6 +713,7 @@ SECTION PRICING
   padding: 0.5rem 2rem;
   transform: rotate(37deg);
 }
+
 .plan-header {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -721,5 +743,124 @@ SECTION PRICING
 /* BUTTON  */
 
 .plan-sign-up {
+  text-align: center;
   margin-top: 2rem;
+}
+
+/********************** 
+FEATURE SECTION 4 GRID ICONS
+************************/
+
+.grid--4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature-icon {
+  color: #f78b2d;
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 2rem;
+  background-color: #f2dbcc;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/**************  
+CTA SECTION  
+***************/
+
+.section-cta {
+  padding: 2.1rem 2rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #f89238, #f37f19);
+  /* 
+  let the content now dictate the height and
+  not have it fixed
+  height: 30rem;
+  */
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4rem 4rem 4rem 4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 2.2rem;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+
+.cta-img-box {
+  /* background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 170, 78, 0.35),
+      rgba(234, 188, 195, 0.35)
+    ), */
+
+  background-image: url("https://images.unsplash.com/photo-1535473895227-bdecb20fb157?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.2rem;
+  row-gap: 1.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0, 0, 0, 0.8rem rgba(253, 242, 233, 0.5);
 }
