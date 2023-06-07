@@ -80,10 +80,14 @@ body {
   padding: 0 3.5rem;
 }
 
-.logo {
+/* .logo {
   border-radius: 50%;
-}
+} */
 
+.header-logo {
+  align-items: center;
+  margin-top: 3rem;
+}
 /* Navigation Link */
 
 .main-nav-list {
@@ -783,7 +787,7 @@ CTA SECTION
 ***************/
 
 .section-cta {
-  padding: 2.1rem 2rem;
+  padding: 2.1rem 2rem 8rem 2rem;
 }
 
 .cta {
@@ -863,4 +867,87 @@ CTA SECTION
 .cta *:focus {
   outline: none;
   box-shadow: 0, 0, 0, 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/**************** 
+FOOTER SECTION
+ *****************/
+
+.footer {
+  padding: 8rem 2rem;
+  border-top: 1px solid #eee;
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.food-logo {
+  color: #e67322;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* social links */
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+}
+
+/* style the social icons to be bigger  */
+
+.social-icon {
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Style copyright and contact text */
+
+.contacts,
+.copyright {
+  line-height: 1.6rem;
+}
+
+.address {
+  margin-bottom: 1.5rem;
+}
+
+/* footer heading and footer links */
+.footer-heading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+/* style the nav with flex-direction to make them 
+appear side by side to eachother */
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contacts,
+.copyright,
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
