@@ -1,0 +1,89 @@
+/* rem and em do not depend on html font-size in 
+media queries 
+
+Instead 1rem = 1em = 16px
+*/
+
+/* How to calculate break point-  screen size for media queries-
+Example: 1344/16 = 84em(use emb)  for smaller desktops*/
+
+/************************* 
+MEDIA QUERIES SECTION HERO 
+****************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 100rem;
+  }
+
+  .heading-primary {
+    font-size: 1.5rem;
+  }
+
+  /* .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+}
+
+/* BELOW 1200px landscape tablets */
+
+@media (max-width: 75em) {
+  .heading-secondary {
+    font-size: 1.2rem;
+  }
+  .heading-tertiary {
+    font-size: 1rem;
+  }
+  .header {
+    padding: 0.25rem;
+  }
+  .hero {
+    gap: 3rem;
+  }
+  .main-nav-list {
+    gap: 1rem;
+  }
+}
+
+/* BELOW 940/16 = 59 Tablets at break point */
+
+@media (max-width: 59em) {
+  .hero {
+    grid-template-columns: 1fr;
+    /* padding: 0 1.2rem; */
+  }
+  .hero-img {
+    width: 50%;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .logos img {
+    height: 0.5rem;
+  }
+  .step-number {
+    font-size: 2.4rem;
+  }
+  .meal-content {
+    padding: 0.5 rem 1rem 1rem 1rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+  /* .cta-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+  } */
+}
