@@ -60,11 +60,16 @@ Generate Text from favicon.io
 /* Percentage of users browser font-size setting */
 /* font-size: 62.5%; */
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 /* html {
   font-size: 62.5%;
@@ -79,6 +84,31 @@ body {
   /*make the header sticky*/
   height: 5.4rem;
   padding: 0 3.5rem;
+
+  /* whenever a child position an element to absolute 
+  it has to be positioned to relative in the parents element */
+  position: relative;
+}
+
+/* menu button icon */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: #333;
+}
+
+/* select the close icon attribute 
+to hide the icon */
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* .logo {
@@ -709,7 +739,7 @@ SECTION PRICING
 .pricing-plan-complete::after {
   content: "Best Value";
   position: absolute;
-  top: 4%;
+  top: 2%;
   right: -8%;
   text-align: center;
   text-transform: uppercase;
