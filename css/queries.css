@@ -172,3 +172,48 @@ MEDIA QUERIES SECTION HERO
     margin-bottom: 2.2rem;
   }
 }
+
+/* BELOW 544px phones */
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 2.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(1.4rem);
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.6rem 1rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 0.8rem;
+  }
+
+  /* .cta-img-box {
+    height: 20rem;
+    grid-row: 1;
+  } */
+}
