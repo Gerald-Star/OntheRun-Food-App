@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- Header / logo -->
-    <header class="header">
+    <header class="header nav-open">
       <a href="#" class="footer-logo header-logo"> <span class="food-logo">OnTheRun</span>Food</a>
       <!-- <a href="#">
       <img
@@ -33,11 +33,11 @@
       <!-- Navigation Links -->
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meal Plans</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meal Plans</a></li>
+          <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
 
@@ -67,11 +67,12 @@
 
           <!-- button section -->
 
-          <a href="#" class="btn btn--full margin-right"
+          <a href="#cta" class="btn btn--full margin-right"
             >Start eating healthy.</a
           >
-          <a href="#" class="btn btn--outline"> Learn more &darr;</a>
+          <a href="#how" class="btn btn--outline"> Learn more &darr;</a>
 
+          
           <!-- Customer Delivery with image elements -->
 
           <div class="delivered-meals">
@@ -141,7 +142,7 @@
     </section>
 
     <!-- REUSABLE SECTION  Z PATTERN -->
-    <section class="section-how">
+    <section class="section-how" id="how">
       <!-- STEP 01 -->
       <div class="container">
         <span class="subheading">How it works</span>
@@ -214,7 +215,7 @@
       </div>
     </section>
 
-    <section class="section-meal">
+    <section class="section-meal" id="meals">
       <div class="container center-text">
         <span class="subheading">Meals</span>
         <h2 class="heading-secondary">
@@ -477,7 +478,7 @@
       SECTION TESTIMONIAL USED 2 GRID DIMENSION 
      -->
 
-    <section class="section-testimonials grid grid--2-cols">
+    <section class="section-testimonials grid grid--2-cols" id="testimonials">
       <div class="testimonials-container">
         <span class="subheading">Testimonials</span>
         <h2 class="heading-secondary">
@@ -648,7 +649,7 @@
       SECTION PRICING
      -->
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
       <div class="container">
         <span class="subheading">Pricing</span>
         <h2 class="heading-secondary">Eating well without breaking the bank</h2>
@@ -835,7 +836,7 @@
       CTA SECTION 
     -->
 
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
       <div class="container">
         <div class="cta">
           <div class="cta-text-box">
@@ -1001,5 +1002,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- <script src="main.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>

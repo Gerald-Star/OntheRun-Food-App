@@ -16,7 +16,7 @@ MEDIA QUERIES SECTION HERO
   }
 
   .heading-primary {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   /* .gallery {
@@ -82,12 +82,15 @@ MEDIA QUERIES SECTION HERO
   .btn--form {
     margin-top: 1.2rem;
   }
+
   /* .cta-text {
     font-size: 0.8rem;
     font-weight: 600;
   } */
+
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   /* make the main nav to be in absolute position 
