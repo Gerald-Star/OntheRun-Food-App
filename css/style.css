@@ -85,7 +85,7 @@ body {
 
   /*make the header sticky*/
   height: 5.4rem;
-  padding: 1rem;
+  padding: 0.8rem;
 
   /* whenever a child position an element to absolute 
   it has to be positioned to relative in the parents element */
@@ -212,7 +212,7 @@ subheading
 }
 
 .heading-primary {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   margin-bottom: 2.8rem;
 }
 
@@ -320,7 +320,7 @@ this is not just a normal button */
 }
 /* img */
 .hero-img {
-  width: 100%;
+  width: 90%;
   /* height: 100%; */
 }
 
@@ -928,6 +928,8 @@ FOOTER SECTION
 
 .food-logo {
   color: #e67322;
+  font-size: 1.2rem;
+  font-style: Rubik;
 }
 
 .footer-logo {
