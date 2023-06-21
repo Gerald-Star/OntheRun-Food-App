@@ -80,11 +80,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.03);
 
   /*make the header sticky*/
   height: 5.4rem;
-  padding: 0 3.5rem;
+  padding: 1rem;
 
   /* whenever a child position an element to absolute 
   it has to be positioned to relative in the parents element */
@@ -116,6 +117,16 @@ to hide the icon */
   border-radius: 50%;
 } */
 
+/* sticky position for the navigation bar */
+/* 'add z-index to help the navigation scroll'*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
 .header-logo {
   align-items: center;
   margin-top: 3rem;
